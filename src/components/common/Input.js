@@ -1,6 +1,11 @@
 import React from 'react';
 import { string, object } from 'prop-types';
-import { FormattedMessage } from 'react-intl';
+import TextField from '@material-ui/core/TextField';
+import {
+  injectIntl,
+  intlShape,
+  defineMessages
+} from 'react-intl';
 
 import { parseInputErrors } from '../../utils/helpers';
 
@@ -9,23 +14,28 @@ const Input = ({
   label,
   type,
   placeholder,
-  meta: { touched, error }
-}) => (
-  <div>
-    {label && <label>{label}</label>}
+  meta: { touched, error },
+  intl
+}) => {
+  // debugger;
+  const messages = error && defineMessages({
+    error: { id: parseInputErrors(error) },
+  });
+  const errorMessage = error && intl.formatMessage(messages.error);
+
+  return (
     <div>
-      <input {...input} {...{ placeholder, type }} />
-      {touched && error &&
-        <span>
-          <FormattedMessage
-            id={parseInputErrors(error)}
-            defaultMessage={parseInputErrors(error)}
-          />
-        </span>
-      }
+      <div>
+        <TextField
+          error={touched && errorMessage}
+          label={errorMessage || label}
+          {...input}
+          {...{ placeholder, type }}
+        />
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 Input.propTypes = {
   input: object.isRequired,
@@ -33,6 +43,7 @@ Input.propTypes = {
   type: string.isRequired,
   placeholder: string,
   meta: object,
+  intl: intlShape,
 };
 
-export default Input;
+export default injectIntl(Input);

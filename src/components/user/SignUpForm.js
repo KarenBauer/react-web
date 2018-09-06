@@ -26,6 +26,7 @@ const SignUpForm = ({ handleSubmit, submitting, intl }) => (
         label={intl.formatMessage(messages.email)}
         component={Input}
         type="email"
+        placeholder="Email"
       />
     </div>
     <div>
@@ -34,6 +35,7 @@ const SignUpForm = ({ handleSubmit, submitting, intl }) => (
         label={intl.formatMessage(messages.password)}
         component={Input}
         type="password"
+        placeholder="Password"
       />
     </div>
     <div>
@@ -42,6 +44,7 @@ const SignUpForm = ({ handleSubmit, submitting, intl }) => (
         label={intl.formatMessage(messages.passConfirmation)}
         component={Input}
         type="password"
+        placeholder="Password Confirmation"
       />
     </div>
     <button type="submit">
