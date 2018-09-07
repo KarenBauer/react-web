@@ -1,16 +1,17 @@
 import api from './apiService';
 
 class Session {
-  static login(user) {
-    return api.post('/offerers/sign_in', user);
+  static login(offerer) {
+    return api.post('/offerers/sign_in', offerer);
   }
 
   static logout() {
     return api.delete('/offerers/sign_out');
   }
 
-  static signUp(user) {
-    return api.post('/offerers', user);
+  static signUp(offerer) {
+    debugger;
+    return api.post('/offerers', offerer);
   }
 }
 

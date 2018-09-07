@@ -17,7 +17,6 @@ const Input = ({
   meta: { touched, error },
   intl
 }) => {
-  // debugger;
   const messages = error && defineMessages({
     error: { id: parseInputErrors(error) },
   });
@@ -27,8 +26,9 @@ const Input = ({
     <div>
       <div>
         <TextField
-          error={touched && errorMessage}
-          label={errorMessage || label}
+          error={touched && Boolean(error)}
+          label={label}
+          helperText={touched && errorMessage}
           {...input}
           {...{ placeholder, type }}
         />

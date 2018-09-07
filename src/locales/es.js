@@ -11,9 +11,15 @@ export default {
   'login.form.email.invalid': 'Debe ingresar un email válido',
   'login.form.password.presence': 'Debe ingresar una contraseña para continuar',
 
-  'signup.title': 'REGISRARSE',
+  'signup.title': 'REGISTRARSE',
   'signup.signin': 'Iniciar Sesión',
   'signup.form.passconfirmation': 'Confirmación de Contraseña',
+  'signup.form.firstname': 'Nombre',
+  'signup.form.lastname': 'Apellido',
+  'signup.form.username': 'Nombre de usuario',
+  'signup.form.address': 'Dirección',
+  'signup.form.phone': 'Teléfono',
+  'signup.form.document': 'Documento',
   'signup.form.confirmation.presence': 'Debe confirmar su contraseña para continuar',
   'signup.form.confirmation.equality': 'Su confirmación de contraseña debe ser igual a la contraseña',
 
