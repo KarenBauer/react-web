@@ -14,9 +14,10 @@ const SignUpPage = ({ signUp, authenticated }) => {
   }
 
   return (
-    <div>
-      <p><FormattedMessage id="signup.title" /></p>
+    <div className="sign-up-form">
+      <p className="sign-up-title"><FormattedMessage id="signup.title" /></p>
       <SignUpForm onSubmit={signUp} />
+      <p>¿Tienes una cuenta?</p>
       <Link to={routes.login}>
         <FormattedMessage id="signup.signin" />
       </Link>

@@ -10,7 +10,6 @@ class Session {
   }
 
   static signUp(offerer) {
-    debugger;
     return api.post('/offerers', offerer);
   }
 }

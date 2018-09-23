@@ -1,6 +1,6 @@
 export default {
-  'login.title': 'INICIAR SESIÓN',
-  'login.signup': 'Registrarse',
+  'login.title': 'Iniciar Sesión',
+  'login.signup': 'Registrate',
 
   'login.form.email': 'Email',
   'login.form.password': 'Contraseña',
@@ -11,8 +11,8 @@ export default {
   'login.form.email.invalid': 'Debe ingresar un email válido',
   'login.form.password.presence': 'Debe ingresar una contraseña para continuar',
 
-  'signup.title': 'REGISTRARSE',
-  'signup.signin': 'Iniciar Sesión',
+  'signup.title': 'Regístrate',
+  'signup.signin': 'Inicia Sesión',
   'signup.form.passconfirmation': 'Confirmación de Contraseña',
   'signup.form.firstname': 'Nombre',
   'signup.form.lastname': 'Apellido',
@@ -28,8 +28,18 @@ export default {
   'home.welcome': 'Welcome to React Redux Base',
 
   // errors
+  'firstName.length': 'Debe contener al menos 3 caracteres',
+  'firstName.presence': 'Debe ingresar un nombre para continuar',
+  'lastName.length': 'Debe contener al menos 3 caracteres',
+  'lastName.presence': 'Debe ingresar un apellido para continuar',
   'email.presence': 'Debe ingresar un email para continuar',
   'email.invalid': 'Debe ingresar un email válido',
+  'username.length': 'Debe contener al menos 3 caracteres',
+  'username.presence': 'Debe ingresar un nombre de usuario para continuar',
+  'address.presence': 'Debe ingresar una dirección para continuar',
+  'phone.presence': 'Debe ingresar un teléfono para continuar',
+  'document.presence': 'Debe ingresar un documento para continuar',
+  'document.validCi': 'Debe ingresar un documento valido para continuar',
   'password.presence': 'Debe ingresar una contraseña para continuar',
   'passwordConfirmation.presence': 'Debe confirmar su contraseña para continuar',
   'passwordConfirmation.equality': 'Su confirmación de contraseña debe ser igual a la contraseña'

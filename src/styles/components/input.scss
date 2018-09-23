@@ -1,0 +1,17 @@
+// $color: #911e1e;
+// @color: #4D926F;
+
+.input-no-shadow {
+  input {
+    box-shadow: none;
+    width: 300px;
+
+    &:focus {
+      border: 0;
+      box-shadow: none;
+    }
+  }
+  input[type=text] {
+    height: 1.1875em;
+  }
+}
