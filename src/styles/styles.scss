@@ -4,6 +4,7 @@
 @import './components/signUpForm.scss';
 @import './components/signInForm.scss';
 @import './components/button.scss';
+@import './components/confirmation.scss';
 
 /* CSS RESET */
 html, body, div, span, applet, object, iframe,
@@ -59,7 +60,6 @@ body {
 	font-family: 'Lato', sans-serif;
   font-size: 100%;
   color: #746f72;
-  padding: 50px 0;
 }
 
 .loading-background {
@@ -90,7 +90,11 @@ body {
 
 #app {
   display: flex;
-  height: 100%;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
+}
+
+.form-field-container {
+  margin: 8px 0;
 }

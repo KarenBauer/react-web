@@ -10,7 +10,7 @@ import routes from '../constants/routesPaths';
 
 const SignUpPage = ({ signUp, authenticated }) => {
   if (authenticated) {
-    return <Redirect to={routes.index} />;
+    return <Redirect to={routes.confirmation} />;
   }
 
   return (

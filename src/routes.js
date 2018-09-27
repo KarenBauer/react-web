@@ -3,6 +3,7 @@ import HomePage from './containers/HomePage';
 import LoginPage from './containers/LoginPage';
 import SignUpPage from './containers/SignUpPage';
 import NotFoundPage from './containers/NotFoundPage';
+import ConfirmationPage from './containers/ConfirmationPage';
 
 const routes = [
   {
@@ -20,8 +21,12 @@ const routes = [
     component: SignUpPage
   },
   {
+    path: routesPaths.confirmation,
+    component: ConfirmationPage
+  },
+  {
     component: NotFoundPage
-  }
+  },
 ];
 
 export default routes;

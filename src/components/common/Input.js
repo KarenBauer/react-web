@@ -33,20 +33,16 @@ const Input = ({
   const errorMessage = error && intl.formatMessage(messages.error);
 
   return (
-    <div>
-      <div>
-        <MuiThemeProvider theme={theme}>
-          <TextField
-            className="input-no-shadow"
-            error={touched && Boolean(error)}
-            label={label}
-            helperText={touched && errorMessage}
-            {...input}
-            {...{ placeholder, type }}
-          />
-        </MuiThemeProvider>
-      </div>
-    </div>
+    <MuiThemeProvider theme={theme}>
+      <TextField
+        className="input-no-shadow"
+        error={touched && Boolean(error)}
+        label={label}
+        helperText={touched && errorMessage}
+        {...input}
+        {...{ placeholder, type }}
+      />
+    </MuiThemeProvider>
   );
 };
 

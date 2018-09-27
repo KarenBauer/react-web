@@ -27,6 +27,9 @@ export default {
 
   'home.welcome': 'Welcome to React Redux Base',
 
+  'confirmation.title': 'Gracias por registrarte!',
+  'confirmation.description': 'Chequea tu email y confirma tu cuenta para poder ofertar',
+
   // errors
   'firstName.length': 'Debe contener al menos 3 caracteres',
   'firstName.presence': 'Debe ingresar un nombre para continuar',

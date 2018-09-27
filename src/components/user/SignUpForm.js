@@ -26,7 +26,7 @@ const messages = defineMessages({
 
 const SignUpForm = ({ handleSubmit, submitting, intl }) => (
   <form onSubmit={handleSubmit}>
-    <div>
+    <div className="form-field-container">
       <Field
         name="firstName"
         label={intl.formatMessage(messages.firstName)}
@@ -35,7 +35,7 @@ const SignUpForm = ({ handleSubmit, submitting, intl }) => (
         placeholder="Nombre"
       />
     </div>
-    <div>
+    <div className="form-field-container">
       <Field
         name="lastName"
         label={intl.formatMessage(messages.lastName)}
@@ -44,7 +44,7 @@ const SignUpForm = ({ handleSubmit, submitting, intl }) => (
         placeholder="Apellido"
       />
     </div>
-    <div>
+    <div className="form-field-container">
       <Field
         name="email"
         label={intl.formatMessage(messages.email)}
@@ -53,7 +53,7 @@ const SignUpForm = ({ handleSubmit, submitting, intl }) => (
         placeholder="Email"
       />
     </div>
-    <div>
+    <div className="form-field-container">
       <Field
         name="username"
         label={intl.formatMessage(messages.username)}
@@ -62,7 +62,7 @@ const SignUpForm = ({ handleSubmit, submitting, intl }) => (
         placeholder="Nombre de usuario"
       />
     </div>
-    <div>
+    <div className="form-field-container">
       <Field
         name="address"
         label={intl.formatMessage(messages.address)}
@@ -71,7 +71,7 @@ const SignUpForm = ({ handleSubmit, submitting, intl }) => (
         placeholder="Dirección"
       />
     </div>
-    <div>
+    <div className="form-field-container">
       <Field
         name="phone"
         label={intl.formatMessage(messages.phone)}
@@ -80,7 +80,7 @@ const SignUpForm = ({ handleSubmit, submitting, intl }) => (
         placeholder="Teléfono"
       />
     </div>
-    <div>
+    <div className="form-field-container">
       <Field
         name="document"
         label={intl.formatMessage(messages.document)}
@@ -89,7 +89,7 @@ const SignUpForm = ({ handleSubmit, submitting, intl }) => (
         placeholder="Documento"
       />
     </div>
-    <div>
+    <div className="form-field-container">
       <Field
         name="password"
         label={intl.formatMessage(messages.password)}
@@ -98,7 +98,7 @@ const SignUpForm = ({ handleSubmit, submitting, intl }) => (
         placeholder="Password"
       />
     </div>
-    <div>
+    <div className="form-field-container">
       <Field
         name="passwordConfirmation"
         label={intl.formatMessage(messages.passConfirmation)}
