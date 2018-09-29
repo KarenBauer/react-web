@@ -14,8 +14,8 @@ const LoginPage = ({ login, authenticated }) => {
   }
 
   return (
-    <div className="sign-in-form">
-      <p className="sign-in-title"><FormattedMessage id="login.title" /></p>
+    <div className="form-container sign-in-form">
+      <p className="form-title"><FormattedMessage id="login.title" /></p>
       <LoginForm onSubmit={login} />
       <p>¿Todavía no tenés una cuenta?</p>
       <Link to={routes.signUp}>

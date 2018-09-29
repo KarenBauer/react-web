@@ -1,14 +1,10 @@
 .sign-in-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: $white;
-  padding: 40px 80px;
+  text-align: center;
+  width: 30%;
 }
 
-.sign-in-title {
-  font-size: 24px;
-  font-weight: 600;
-  padding-bottom: 30px;
-  color: #911e1e;
+.sign-in-errors {
+  color: red;
+  font-size: 12px;
+  padding-bottom: 20px;
 }

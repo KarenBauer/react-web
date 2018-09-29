@@ -44,6 +44,7 @@ export default {
   'document.presence': 'Debe ingresar un documento para continuar',
   'document.validCi': 'Debe ingresar un documento valido para continuar',
   'password.presence': 'Debe ingresar una contraseña para continuar',
+  'password.length': 'Debe contener al menos 8 caracteres',
   'passwordConfirmation.presence': 'Debe confirmar su contraseña para continuar',
   'passwordConfirmation.equality': 'Su confirmación de contraseña debe ser igual a la contraseña'
 };

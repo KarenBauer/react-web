@@ -19,7 +19,7 @@ const messages = defineMessages({
 
 export const LoginForm = ({ handleSubmit, error, submitting, intl }) => (
   <form onSubmit={handleSubmit}>
-    {error && <strong>{error}</strong>}
+    {error && <p className="sign-in-errors">{error}</p>}
     <div className="form-field-container">
       <Field
         name="email"

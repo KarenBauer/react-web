@@ -1,0 +1,15 @@
+.form-container {
+    align-items: center;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+}
+
+.form-title {
+  color: $bordeaux;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+  
