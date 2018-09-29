@@ -3,10 +3,11 @@ import { sessionService } from 'redux-react-session';
 
 import sessionApi from '../api/sessionApi';
 
-export const signUp = user =>
+export const signUp = offerer =>
   () =>
-    sessionApi.signUp({ user }).then(({ user }) => {
-      sessionService.saveUser(user);
+    sessionApi.signUp({ offerer }).then(({ offerer }) => {
+      sessionService.saveUser(offerer);
+      sessionService.saveSession();
     }).catch((err) => {
       throw new SubmissionError(err.errors);
     });

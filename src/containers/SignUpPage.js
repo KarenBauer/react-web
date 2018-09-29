@@ -10,13 +10,14 @@ import routes from '../constants/routesPaths';
 
 const SignUpPage = ({ signUp, authenticated }) => {
   if (authenticated) {
-    return <Redirect to={routes.index} />;
+    return <Redirect to={routes.confirmation} />;
   }
 
   return (
-    <div>
-      <p><FormattedMessage id="signup.title" /></p>
+    <div className="form-container">
+      <p className="form-title"><FormattedMessage id="signup.title" /></p>
       <SignUpForm onSubmit={signUp} />
+      <p>¿Tienes una cuenta?</p>
       <Link to={routes.login}>
         <FormattedMessage id="signup.signin" />
       </Link>

@@ -1,0 +1,15 @@
+.confirmation-box {
+  align-items: center;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 31%;
+}
+  
+.confirmation-title {
+  color: $bordeaux;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
